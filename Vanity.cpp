@@ -102,7 +102,7 @@ VanitySearch::VanitySearch(Secp256K1 *secp, vector<std::string> &inputPrefixes,s
         for (int j = 0; j < (int)subList.size(); j++) {
           if (initPrefix(subList[j], &it)) {
             it.found = found;
-            it.prefix = strdup(it.prefix); // We need to allocate here, subList will be destroyed
+            it.prefix = _strdup(it.prefix); // We need to allocate here, subList will be destroyed
             itPrefixes.push_back(it);
           }
         }
