@@ -342,10 +342,10 @@ bool VanitySearch::initPrefix(std::string &prefix,PREFIX_ITEM *it) {
   int nbDigit = 0;
   bool wrong = false;
 
-  if (prefix.length() < 2) {
-    printf("Ignoring prefix \"%s\" (too short)\n",prefix.c_str());
-    return false;
-  }
+  //if (prefix.length() < 2) {
+  //  printf("Ignoring prefix \"%s\" (too short)\n",prefix.c_str());
+  //  return false;
+  //}
 
   int aType = -1;
 
@@ -401,10 +401,10 @@ bool VanitySearch::initPrefix(std::string &prefix,PREFIX_ITEM *it) {
 
     }
 
-    if (prefix.length() < 5) {
-      printf("Ignoring prefix \"%s\" (too short, length<5 )\n", prefix.c_str());
-      return false;
-    }
+    //if (prefix.length() < 5) {
+    //  printf("Ignoring prefix \"%s\" (too short, length<5 )\n", prefix.c_str());
+    //  return false;
+    //}
 
     if (prefix.length() >= 36) {
       printf("Ignoring prefix \"%s\" (too long, length>36 )\n", prefix.c_str());
